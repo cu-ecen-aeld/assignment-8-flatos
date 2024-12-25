@@ -6,7 +6,8 @@
 #
 ##############################################################
 
-LDD_VERSION = 8d8d577		#'#COMMIT VERSION NUMBER'
+# LDD_VERSION = 8d8d577		#'#COMMIT VERSION NUMBER'
+LDD_VERSION = 9999999		#'#COMMIT VERSION NUMBER'
 
 
 
