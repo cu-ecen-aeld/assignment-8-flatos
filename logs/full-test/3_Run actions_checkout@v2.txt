@@ -1,0 +1,148 @@
+﻿2024-12-26T22:55:57.0609477Z ##[group]Run actions/checkout@v2
+2024-12-26T22:55:57.0610641Z with:
+2024-12-26T22:55:57.0611130Z   repository: cu-ecen-aeld/assignment-8-flatos
+2024-12-26T22:55:57.0612020Z   token: ***
+2024-12-26T22:55:57.0612460Z   ssh-strict: true
+2024-12-26T22:55:57.0612963Z   persist-credentials: true
+2024-12-26T22:55:57.0613486Z   clean: true
+2024-12-26T22:55:57.0613907Z   fetch-depth: 1
+2024-12-26T22:55:57.0614337Z   lfs: false
+2024-12-26T22:55:57.0614757Z   submodules: false
+2024-12-26T22:55:57.0615325Z   set-safe-directory: true
+2024-12-26T22:55:57.0616146Z ##[endgroup]
+2024-12-26T22:55:57.0697208Z ##[command]/usr/bin/docker exec  041bb83de27f89ea7e496250133d8e7d3089009fc1611caeb73cc28e2ffa2659 sh -c "cat /etc/*release | grep ^ID"
+2024-12-26T22:55:58.0796971Z Syncing repository: cu-ecen-aeld/assignment-8-flatos
+2024-12-26T22:55:58.0799264Z ##[group]Getting Git version info
+2024-12-26T22:55:58.0800325Z Working directory is '/__w/assignment-8-flatos/assignment-8-flatos'
+2024-12-26T22:55:58.0801434Z [command]/usr/bin/git version
+2024-12-26T22:55:58.3382658Z git version 2.34.1
+2024-12-26T22:55:58.3448765Z ##[endgroup]
+2024-12-26T22:55:58.3488761Z Temporarily overriding HOME='/__w/_temp/1604f8cc-9e8d-4655-9896-f6de4f1f5d2e' before making global git config changes
+2024-12-26T22:55:58.3493733Z Adding repository directory to the temporary git global config as a safe directory
+2024-12-26T22:55:58.3498534Z [command]/usr/bin/git config --global --add safe.directory /__w/assignment-8-flatos/assignment-8-flatos
+2024-12-26T22:55:58.3779109Z Deleting the contents of '/__w/assignment-8-flatos/assignment-8-flatos'
+2024-12-26T22:55:58.3792740Z ##[group]Initializing the repository
+2024-12-26T22:55:58.3798572Z [command]/usr/bin/git init /__w/assignment-8-flatos/assignment-8-flatos
+2024-12-26T22:55:58.4461192Z hint: Using 'master' as the name for the initial branch. This default branch name
+2024-12-26T22:55:58.4464272Z hint: is subject to change. To configure the initial branch name to use in all
+2024-12-26T22:55:58.4467019Z hint: of your new repositories, which will suppress this warning, call:
+2024-12-26T22:55:58.4469380Z hint: 
+2024-12-26T22:55:58.4471180Z hint: 	git config --global init.defaultBranch <name>
+2024-12-26T22:55:58.4473243Z hint: 
+2024-12-26T22:55:58.4474832Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2024-12-26T22:55:58.4477501Z hint: 'development'. The just-created branch can be renamed via this command:
+2024-12-26T22:55:58.4479808Z hint: 
+2024-12-26T22:55:58.4480869Z hint: 	git branch -m <name>
+2024-12-26T22:55:58.4483147Z Initialized empty Git repository in /__w/assignment-8-flatos/assignment-8-flatos/.git/
+2024-12-26T22:55:58.4510926Z [command]/usr/bin/git remote add origin https://github.com/cu-ecen-aeld/assignment-8-flatos
+2024-12-26T22:55:58.4735510Z ##[endgroup]
+2024-12-26T22:55:58.4738311Z ##[group]Disabling automatic garbage collection
+2024-12-26T22:55:58.4749428Z [command]/usr/bin/git config --local gc.auto 0
+2024-12-26T22:55:58.4859980Z ##[endgroup]
+2024-12-26T22:55:58.4862058Z ##[group]Setting up auth
+2024-12-26T22:55:58.4883559Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2024-12-26T22:55:58.4986581Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2024-12-26T22:55:59.2450004Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2024-12-26T22:55:59.2536366Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2024-12-26T22:55:59.3071015Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2024-12-26T22:55:59.3165516Z ##[endgroup]
+2024-12-26T22:55:59.3166303Z ##[group]Fetching the repository
+2024-12-26T22:55:59.3193774Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +bb63d9d6acc52018ef12753d3c81ea1da1a1de89:refs/remotes/origin/main
+2024-12-26T22:56:01.0002821Z remote: Enumerating objects: 47, done.        
+2024-12-26T22:56:01.0005040Z remote: Counting objects:   2% (1/47)        
+2024-12-26T22:56:01.0006815Z remote: Counting objects:   4% (2/47)        
+2024-12-26T22:56:01.0008482Z remote: Counting objects:   6% (3/47)        
+2024-12-26T22:56:01.0010530Z remote: Counting objects:   8% (4/47)        
+2024-12-26T22:56:01.0012295Z remote: Counting objects:  10% (5/47)        
+2024-12-26T22:56:01.0014016Z remote: Counting objects:  12% (6/47)        
+2024-12-26T22:56:01.0015708Z remote: Counting objects:  14% (7/47)        
+2024-12-26T22:56:01.0017428Z remote: Counting objects:  17% (8/47)        
+2024-12-26T22:56:01.0019130Z remote: Counting objects:  19% (9/47)        
+2024-12-26T22:56:01.0021115Z remote: Counting objects:  21% (10/47)        
+2024-12-26T22:56:01.0022850Z remote: Counting objects:  23% (11/47)        
+2024-12-26T22:56:01.0024615Z remote: Counting objects:  25% (12/47)        
+2024-12-26T22:56:01.0026346Z remote: Counting objects:  27% (13/47)        
+2024-12-26T22:56:01.0028018Z remote: Counting objects:  29% (14/47)        
+2024-12-26T22:56:01.0029924Z remote: Counting objects:  31% (15/47)        
+2024-12-26T22:56:01.0031660Z remote: Counting objects:  34% (16/47)        
+2024-12-26T22:56:01.0033376Z remote: Counting objects:  36% (17/47)        
+2024-12-26T22:56:01.0036153Z remote: Counting objects:  38% (18/47)        
+2024-12-26T22:56:01.0037834Z remote: Counting objects:  40% (19/47)        
+2024-12-26T22:56:01.0039536Z remote: Counting objects:  42% (20/47)        
+2024-12-26T22:56:01.0041570Z remote: Counting objects:  44% (21/47)        
+2024-12-26T22:56:01.0043237Z remote: Counting objects:  46% (22/47)        
+2024-12-26T22:56:01.0044958Z remote: Counting objects:  48% (23/47)        
+2024-12-26T22:56:01.0046683Z remote: Counting objects:  51% (24/47)        
+2024-12-26T22:56:01.0048482Z remote: Counting objects:  53% (25/47)        
+2024-12-26T22:56:01.0050594Z remote: Counting objects:  55% (26/47)        
+2024-12-26T22:56:01.0052345Z remote: Counting objects:  57% (27/47)        
+2024-12-26T22:56:01.0054061Z remote: Counting objects:  59% (28/47)        
+2024-12-26T22:56:01.0055830Z remote: Counting objects:  61% (29/47)        
+2024-12-26T22:56:01.0057585Z remote: Counting objects:  63% (30/47)        
+2024-12-26T22:56:01.0059311Z remote: Counting objects:  65% (31/47)        
+2024-12-26T22:56:01.0061325Z remote: Counting objects:  68% (32/47)        
+2024-12-26T22:56:01.0063296Z remote: Counting objects:  70% (33/47)        
+2024-12-26T22:56:01.0065080Z remote: Counting objects:  72% (34/47)        
+2024-12-26T22:56:01.0066830Z remote: Counting objects:  74% (35/47)        
+2024-12-26T22:56:01.0068532Z remote: Counting objects:  76% (36/47)        
+2024-12-26T22:56:01.0070531Z remote: Counting objects:  78% (37/47)        
+2024-12-26T22:56:01.0072237Z remote: Counting objects:  80% (38/47)        
+2024-12-26T22:56:01.0073978Z remote: Counting objects:  82% (39/47)        
+2024-12-26T22:56:01.0075679Z remote: Counting objects:  85% (40/47)        
+2024-12-26T22:56:01.0077415Z remote: Counting objects:  87% (41/47)        
+2024-12-26T22:56:01.0079116Z remote: Counting objects:  89% (42/47)        
+2024-12-26T22:56:01.0081076Z remote: Counting objects:  91% (43/47)        
+2024-12-26T22:56:01.0082822Z remote: Counting objects:  93% (44/47)        
+2024-12-26T22:56:01.0084567Z remote: Counting objects:  95% (45/47)        
+2024-12-26T22:56:01.0086302Z remote: Counting objects:  97% (46/47)        
+2024-12-26T22:56:01.0088004Z remote: Counting objects: 100% (47/47)        
+2024-12-26T22:56:01.0090258Z remote: Counting objects: 100% (47/47), done.        
+2024-12-26T22:56:01.0092150Z remote: Compressing objects:   2% (1/35)        
+2024-12-26T22:56:01.0093944Z remote: Compressing objects:   5% (2/35)        
+2024-12-26T22:56:01.0095748Z remote: Compressing objects:   8% (3/35)        
+2024-12-26T22:56:01.0098314Z remote: Compressing objects:  11% (4/35)        
+2024-12-26T22:56:01.0100392Z remote: Compressing objects:  14% (5/35)        
+2024-12-26T22:56:01.0102191Z remote: Compressing objects:  17% (6/35)        
+2024-12-26T22:56:01.0104010Z remote: Compressing objects:  20% (7/35)        
+2024-12-26T22:56:01.0105838Z remote: Compressing objects:  22% (8/35)        
+2024-12-26T22:56:01.0107618Z remote: Compressing objects:  25% (9/35)        
+2024-12-26T22:56:01.0286784Z remote: Compressing objects:  28% (10/35)        
+2024-12-26T22:56:01.0289258Z remote: Compressing objects:  31% (11/35)        
+2024-12-26T22:56:01.0291693Z remote: Compressing objects:  34% (12/35)        
+2024-12-26T22:56:01.0294049Z remote: Compressing objects:  37% (13/35)        
+2024-12-26T22:56:01.0296332Z remote: Compressing objects:  40% (14/35)        
+2024-12-26T22:56:01.0298615Z remote: Compressing objects:  42% (15/35)        
+2024-12-26T22:56:01.0301182Z remote: Compressing objects:  45% (16/35)        
+2024-12-26T22:56:01.0303480Z remote: Compressing objects:  48% (17/35)        
+2024-12-26T22:56:01.0305714Z remote: Compressing objects:  51% (18/35)        
+2024-12-26T22:56:01.0307943Z remote: Compressing objects:  54% (19/35)        
+2024-12-26T22:56:01.0310437Z remote: Compressing objects:  57% (20/35)        
+2024-12-26T22:56:01.0312681Z remote: Compressing objects:  60% (21/35)        
+2024-12-26T22:56:01.0314915Z remote: Compressing objects:  62% (22/35)        
+2024-12-26T22:56:01.0318459Z remote: Compressing objects:  65% (23/35)        
+2024-12-26T22:56:01.0321021Z remote: Compressing objects:  68% (24/35)        
+2024-12-26T22:56:01.0323245Z remote: Compressing objects:  71% (25/35)        
+2024-12-26T22:56:01.0325514Z remote: Compressing objects:  74% (26/35)        
+2024-12-26T22:56:01.0327856Z remote: Compressing objects:  77% (27/35)        
+2024-12-26T22:56:01.0330364Z remote: Compressing objects:  80% (28/35)        
+2024-12-26T22:56:01.0332612Z remote: Compressing objects:  82% (29/35)        
+2024-12-26T22:56:01.0373659Z remote: Compressing objects:  85% (30/35)        
+2024-12-26T22:56:01.0376549Z remote: Compressing objects:  88% (31/35)        
+2024-12-26T22:56:01.0378387Z remote: Compressing objects:  91% (32/35)        
+2024-12-26T22:56:01.0380504Z remote: Compressing objects:  94% (33/35)        
+2024-12-26T22:56:01.0382298Z remote: Compressing objects:  97% (34/35)        
+2024-12-26T22:56:01.0384072Z remote: Compressing objects: 100% (35/35)        
+2024-12-26T22:56:01.0386048Z remote: Compressing objects: 100% (35/35), done.        
+2024-12-26T22:56:01.0388438Z remote: Total 47 (delta 1), reused 35 (delta 0), pack-reused 0 (from 0)        
+2024-12-26T22:56:01.1806444Z From https://github.com/cu-ecen-aeld/assignment-8-flatos
+2024-12-26T22:56:01.1810076Z  * [new ref]         bb63d9d6acc52018ef12753d3c81ea1da1a1de89 -> origin/main
+2024-12-26T22:56:01.2214995Z ##[endgroup]
+2024-12-26T22:56:01.2217356Z ##[group]Determining the checkout info
+2024-12-26T22:56:01.2221448Z ##[endgroup]
+2024-12-26T22:56:01.2223467Z ##[group]Checking out the ref
+2024-12-26T22:56:01.2234531Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2024-12-26T22:56:01.2440048Z Switched to a new branch 'main'
+2024-12-26T22:56:01.2443412Z Branch 'main' set up to track remote branch 'main' from 'origin'.
+2024-12-26T22:56:01.2456460Z ##[endgroup]
+2024-12-26T22:56:01.2747987Z [command]/usr/bin/git log -1 --format='%H'
+2024-12-26T22:56:01.2826829Z 'bb63d9d6acc52018ef12753d3c81ea1da1a1de89'

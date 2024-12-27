@@ -1,0 +1,6 @@
+﻿2024-12-26T23:45:22.9398446Z Stop and remove container: 01786ecee27e4508be99050e804377de_cuaesdaesdautotest24assignment7buildroot_4d5463
+2024-12-26T23:45:22.9406879Z ##[command]/usr/bin/docker rm --force 041bb83de27f89ea7e496250133d8e7d3089009fc1611caeb73cc28e2ffa2659
+2024-12-26T23:45:25.0599705Z 041bb83de27f89ea7e496250133d8e7d3089009fc1611caeb73cc28e2ffa2659
+2024-12-26T23:45:25.0651214Z Remove container network: github_network_312da6a44fca4f4e8411a7be78a3831f
+2024-12-26T23:45:25.0658347Z ##[command]/usr/bin/docker network rm github_network_312da6a44fca4f4e8411a7be78a3831f
+2024-12-26T23:45:25.6497849Z github_network_312da6a44fca4f4e8411a7be78a3831f
