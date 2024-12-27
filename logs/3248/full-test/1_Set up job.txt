@@ -1,0 +1,27 @@
+﻿2024-12-27T13:49:33.2563855Z Current runner version: '2.321.0'
+2024-12-27T13:49:33.2573256Z Runner name: 'CAD2'
+2024-12-27T13:49:33.2574258Z Runner group name: 'Default'
+2024-12-27T13:49:33.2575471Z Machine name: 'CAD2'
+2024-12-27T13:49:33.2582129Z ##[group]GITHUB_TOKEN Permissions
+2024-12-27T13:49:33.2585146Z Actions: write
+2024-12-27T13:49:33.2585987Z Attestations: write
+2024-12-27T13:49:33.2586813Z Checks: write
+2024-12-27T13:49:33.2587580Z Contents: write
+2024-12-27T13:49:33.2588416Z Deployments: write
+2024-12-27T13:49:33.2589267Z Discussions: write
+2024-12-27T13:49:33.2590211Z Issues: write
+2024-12-27T13:49:33.2591003Z Metadata: read
+2024-12-27T13:49:33.2591834Z Packages: write
+2024-12-27T13:49:33.2592650Z Pages: write
+2024-12-27T13:49:33.2593423Z PullRequests: write
+2024-12-27T13:49:33.2594273Z RepositoryProjects: write
+2024-12-27T13:49:33.2595192Z SecurityEvents: write
+2024-12-27T13:49:33.2596063Z Statuses: write
+2024-12-27T13:49:33.2596855Z ##[endgroup]
+2024-12-27T13:49:33.2601069Z Secret source: Actions
+2024-12-27T13:49:33.2602325Z Prepare workflow directory
+2024-12-27T13:49:33.3262711Z Prepare all required actions
+2024-12-27T13:49:33.3340610Z Getting action download info
+2024-12-27T13:49:33.6211458Z Download action repository 'actions/checkout@v2' (SHA:ee0669bd1cc54295c223e0bb666b733df41de1c5)
+2024-12-27T13:49:34.4700766Z Download action repository 'webfactory/ssh-agent@v0.5.3' (SHA:5f066a372ec13036ab7cb9a8adf18c936f8d2043)
+2024-12-27T13:49:35.1444675Z Complete job name: full-test

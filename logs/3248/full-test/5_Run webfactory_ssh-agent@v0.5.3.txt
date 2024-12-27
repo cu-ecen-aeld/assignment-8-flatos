@@ -1,0 +1,17 @@
+﻿2024-12-27T13:50:12.4310515Z ##[group]Run webfactory/ssh-agent@v0.5.3
+2024-12-27T13:50:12.4311796Z with:
+2024-12-27T13:50:12.4321378Z   ssh-private-key: ***
+
+2024-12-27T13:50:12.4322414Z ##[endgroup]
+2024-12-27T13:50:12.4337726Z ##[command]/usr/bin/docker exec  ec570df91f605b81612d65366a4d3624d30083fd3c165a4452450366be05a7ec sh -c "cat /etc/*release | grep ^ID"
+2024-12-27T13:50:12.6694525Z Adding GitHub.com keys to /root/.ssh/known_hosts
+2024-12-27T13:50:12.6706903Z Starting ssh-agent
+2024-12-27T13:50:12.6858101Z SSH_AUTH_SOCK=/tmp/ssh-XXXXXXS9Ms5V/agent.236
+2024-12-27T13:50:12.6859181Z SSH_AGENT_PID=237
+2024-12-27T13:50:12.6860130Z Adding private key(s) to agent
+2024-12-27T13:50:12.6976597Z Identity added: (stdin) (flatos@duosys.com)
+2024-12-27T13:50:12.6977643Z Key(s) added:
+2024-12-27T13:50:12.7060231Z 256 SHA256:bjxSv1YIbtxZoM9/H5zvwrwsc930OMdHiW1vf35n8aY flatos@duosys.com (ED25519)
+2024-12-27T13:50:12.7074154Z Configuring deployment key(s)
+2024-12-27T13:50:12.7195094Z Comment for key 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILhKqHrvr0AUeild76qWIJNozAsTXexnutDwbxA4mN7+ flatos@duosys.com' does not match GitHub URL pattern. Not treating it as a GitHub deploy key.
+2024-12-27T13:50:12.7197930Z Comment for key '' does not match GitHub URL pattern. Not treating it as a GitHub deploy key.

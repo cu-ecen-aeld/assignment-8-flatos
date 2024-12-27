@@ -1,0 +1,36 @@
+﻿2024-12-27T13:49:35.2899221Z ##[group]Checking docker version
+2024-12-27T13:49:35.2921050Z ##[command]/usr/bin/docker version --format '{{.Server.APIVersion}}'
+2024-12-27T13:49:35.3334882Z '1.47'
+2024-12-27T13:49:35.3364469Z Docker daemon API version: '1.47'
+2024-12-27T13:49:35.3368175Z ##[command]/usr/bin/docker version --format '{{.Client.APIVersion}}'
+2024-12-27T13:49:35.3650961Z '1.47'
+2024-12-27T13:49:35.3677204Z Docker client API version: '1.47'
+2024-12-27T13:49:35.3686488Z ##[endgroup]
+2024-12-27T13:49:35.3691959Z ##[group]Clean up resources from previous jobs
+2024-12-27T13:49:35.3701727Z ##[command]/usr/bin/docker ps --all --quiet --no-trunc --filter "label=a99339"
+2024-12-27T13:49:35.3959804Z ##[command]/usr/bin/docker network prune --force --filter "label=a99339"
+2024-12-27T13:49:35.4201519Z ##[endgroup]
+2024-12-27T13:49:35.4203386Z ##[group]Create local container network
+2024-12-27T13:49:35.4220248Z ##[command]/usr/bin/docker network create --label a99339 github_network_ccda25d9f2f242f8802d6792f75b8205
+2024-12-27T13:49:35.5917942Z 220d900290d865c634d713dbc44a23ad220198e94bf0f14120184a8849501550
+2024-12-27T13:49:35.5983726Z ##[endgroup]
+2024-12-27T13:49:35.6025100Z ##[group]Starting job container
+2024-12-27T13:49:35.6054277Z ##[command]/usr/bin/docker pull cuaesd/aesd-autotest:24-assignment7-buildroot
+2024-12-27T13:49:36.5721129Z 24-assignment7-buildroot: Pulling from cuaesd/aesd-autotest
+2024-12-27T13:49:36.5969018Z Digest: sha256:a5d64544b4bdb1fab43028180c102b98ef0070eb0fd90f2c9c83255d84e4b023
+2024-12-27T13:49:36.5972929Z Status: Image is up to date for cuaesd/aesd-autotest:24-assignment7-buildroot
+2024-12-27T13:49:36.6136256Z docker.io/cuaesd/aesd-autotest:24-assignment7-buildroot
+2024-12-27T13:49:36.6466777Z ##[command]/usr/bin/docker create --name bda8b29b385f441b8c806b20e650afac_cuaesdaesdautotest24assignment7buildroot_45d3c3 --label a99339 --workdir /__w/assignment-8-flatos/assignment-8-flatos --network github_network_ccda25d9f2f242f8802d6792f75b8205  -e "HOME=/github/home" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/flatos/Projects/Education/ECEA5306/actions-runner-5/_work":"/__w" -v "/home/flatos/Projects/Education/ECEA5306/actions-runner-5/externals":"/__e":ro -v "/home/flatos/Projects/Education/ECEA5306/actions-runner-5/_work/_temp":"/__w/_temp" -v "/home/flatos/Projects/Education/ECEA5306/actions-runner-5/_work/_actions":"/__w/_actions" -v "/home/flatos/Projects/Education/ECEA5306/actions-runner-5/_work/_tool":"/__w/_tool" -v "/home/flatos/Projects/Education/ECEA5306/actions-runner-5/_work/_temp/_github_home":"/github/home" -v "/home/flatos/Projects/Education/ECEA5306/actions-runner-5/_work/_temp/_github_workflow":"/github/workflow" --entrypoint "tail" cuaesd/aesd-autotest:24-assignment7-buildroot "-f" "/dev/null"
+2024-12-27T13:49:38.0376674Z ec570df91f605b81612d65366a4d3624d30083fd3c165a4452450366be05a7ec
+2024-12-27T13:49:38.0466527Z ##[command]/usr/bin/docker start ec570df91f605b81612d65366a4d3624d30083fd3c165a4452450366be05a7ec
+2024-12-27T13:49:38.8073626Z ec570df91f605b81612d65366a4d3624d30083fd3c165a4452450366be05a7ec
+2024-12-27T13:49:38.8130587Z ##[command]/usr/bin/docker ps --all --filter id=ec570df91f605b81612d65366a4d3624d30083fd3c165a4452450366be05a7ec --filter status=running --no-trunc --format "{{.ID}} {{.Status}}"
+2024-12-27T13:49:38.8476248Z ec570df91f605b81612d65366a4d3624d30083fd3c165a4452450366be05a7ec Up Less than a second
+2024-12-27T13:49:38.8533702Z ##[command]/usr/bin/docker inspect --format "{{range .Config.Env}}{{println .}}{{end}}" ec570df91f605b81612d65366a4d3624d30083fd3c165a4452450366be05a7ec
+2024-12-27T13:49:38.8790772Z HOME=/github/home
+2024-12-27T13:49:38.8791863Z GITHUB_ACTIONS=true
+2024-12-27T13:49:38.8792611Z CI=true
+2024-12-27T13:49:38.8793486Z PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+2024-12-27T13:49:38.8829512Z ##[endgroup]
+2024-12-27T13:49:38.8843171Z ##[group]Waiting for all services to be ready
+2024-12-27T13:49:38.8845684Z ##[endgroup]

@@ -1,0 +1,19 @@
+﻿2024-12-27T14:38:25.7720535Z Post job cleanup.
+2024-12-27T14:38:25.7736698Z ##[command]/usr/bin/docker exec  ec570df91f605b81612d65366a4d3624d30083fd3c165a4452450366be05a7ec sh -c "cat /etc/*release | grep ^ID"
+2024-12-27T14:38:26.1329238Z [command]/usr/bin/git version
+2024-12-27T14:38:26.1423544Z git version 2.34.1
+2024-12-27T14:38:26.1519806Z Temporarily overriding HOME='/__w/_temp/f058d1e0-9b15-4a9c-a541-ea0b0588a06b' before making global git config changes
+2024-12-27T14:38:26.1521600Z Adding repository directory to the temporary git global config as a safe directory
+2024-12-27T14:38:26.1525931Z [command]/usr/bin/git config --global --add safe.directory /__w/assignment-8-flatos/assignment-8-flatos
+2024-12-27T14:38:26.2048754Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2024-12-27T14:38:26.2134979Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2024-12-27T14:38:26.4655263Z Entering 'assignment-autotest'
+2024-12-27T14:38:26.4864159Z Entering 'assignment-autotest/Unity'
+2024-12-27T14:38:26.5021971Z Entering 'buildroot'
+2024-12-27T14:38:26.5296934Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2024-12-27T14:38:26.5357678Z http.https://github.com/.extraheader
+2024-12-27T14:38:26.5395317Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2024-12-27T14:38:26.5497792Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2024-12-27T14:38:26.6132204Z Entering 'assignment-autotest'
+2024-12-27T14:38:26.6203175Z Entering 'assignment-autotest/Unity'
+2024-12-27T14:38:26.6326926Z Entering 'buildroot'
